@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polarbookshop.catalogservice.web.BookJsonTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-04T13:42:20" hostname="MacBook-Pro-tilhrende-Nicklas.local" time="0.505">
+  <properties/>
+  <testcase name="testSerialize()" classname="com.polarbookshop.catalogservice.web.BookJsonTests" time="0.484"/>
+  <testcase name="testDeserialize()" classname="com.polarbookshop.catalogservice.web.BookJsonTests" time="0.02"/>
+  <system-out><![CDATA[15:42:19.678 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.web.BookJsonTests]: BookJsonTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:19.751 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.web.BookJsonTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.7)
+
+2024-07-04T15:42:19.926+02:00  INFO 86443 --- [    Test worker] c.p.catalogservice.web.BookJsonTests     : Starting BookJsonTests using Java 17.0.3 with PID 86443 (started by nicklasroed in /Users/nicklasroed/Desktop/Spring Boot in Action/catalog-service)
+2024-07-04T15:42:19.926+02:00  INFO 86443 --- [    Test worker] c.p.catalogservice.web.BookJsonTests     : No active profile set, falling back to 1 default profile: "default"
+2024-07-04T15:42:20.114+02:00  INFO 86443 --- [    Test worker] c.p.catalogservice.web.BookJsonTests     : Started BookJsonTests in 0.328 seconds (process running for 0.856)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
