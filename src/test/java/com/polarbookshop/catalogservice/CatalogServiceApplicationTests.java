@@ -17,7 +17,7 @@ class CatalogServiceApplicationTests {
 
 	@Test
 	void whenPostRequestThenBookCreated() {
-		var expectedBook = new Book("1231231231", "Title", "Author", 9.90);
+		var expectedBook = Book.of("1231231231", "Title", "Author", 9.90);
 
 		webTestClient
 				.post()
@@ -30,8 +30,5 @@ class CatalogServiceApplicationTests {
 					assertThat(actualBook.isbn()).isEqualTo(expectedBook.isbn());
 				});
 		}
-	@Test
-	void contextLoads() {
-	}
 
 }
