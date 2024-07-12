@@ -1,10 +1,10 @@
 package com.polarbookshop.catalogservice.domain;
 
-
 import org.springframework.stereotype.Service;
 
 @Service
 public class BookService {
+
     private final BookRepository bookRepository;
 
     public BookService(BookRepository bookRepository) {
@@ -16,7 +16,8 @@ public class BookService {
     }
 
     public Book viewBookDetails(String isbn) {
-        return bookRepository.findByIsbn(isbn).orElseThrow(() -> new BookNotFoundException(isbn));
+        return bookRepository.findByIsbn(isbn)
+                .orElseThrow(() -> new BookNotFoundException(isbn));
     }
 
     public Book addBookToCatalog(Book book) {
@@ -46,4 +47,5 @@ public class BookService {
                 })
                 .orElseGet(() -> addBookToCatalog(book));
     }
+
 }
